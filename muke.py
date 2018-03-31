@@ -5,7 +5,6 @@ import re
 import requests
 import time
 import json
-import traceback
 import os
 
 class SCMuke(object):
@@ -16,8 +15,8 @@ class SCMuke(object):
         self.lessonName = ''
         self.batchId = ''
         self.httpSessionId = ''
-        self.username = ''
-        self.password = ''
+        self.username = '*****'
+        self.password = '*****'
         self.session = requests.Session()
         self.lessonMenuText = ''
         self.lessonList = []
@@ -181,8 +180,8 @@ class SCMuke(object):
         self.httpSessionId = dict['NTESSTUDYSI']
 
 if __name__ == '__main__':
-    lessonNum = '1002261004'
-    lessonName = '数据结构-浙大'
+    lessonNum = '*****'
+    lessonName = '*****'
     muke = SCMuke()
     muke.scrapy(lessonNum, lessonName)
 
